@@ -184,12 +184,8 @@ body a{
   	text-transform: uppercase;
 }
 /*公司介绍*/
-.product {
+.product, .gallery, .contact{
   	padding: 6em 0 6em;
-}
-.product p span{
-	color:#ffce3a;
-	font-weight:600;
 }
 p.natus{
 	font-size:14px;
@@ -198,8 +194,33 @@ p.natus{
 	line-height:1.7em;
 	text-align:center;
 }
+.introduction {
+	margin: 0 0 3em;
+}
+.introduction h3{
+	font-size:2.5em;
+	color:#FEC514;
+	margin:0 0 .5em;
+	font-weight:300;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+}
+.introduction p{
+	text-align: left;
+	margin: 0 0 .5em;
+	line-height: 1.7em;
+	color: #444444;
+}
+.introduction p span{
+	color:#ffce3a;
+	font-weight:600;
+}
+
 /*产品介绍*/
-.product-grid img{
+.product-grids, .gallery-grids, .contact-grids{
+	margin: 1em 0 0;
+}
+.product-grid img, .gallery-grid img{
 	width:100%;
 }
 .line{
@@ -253,7 +274,7 @@ h4.line a:before{
 	-o-border-radius:5px;
 }
 .product-grid p{
-	font-size: 14px;
+	font-size: .9em;
 	color: #9c9c9c;
 	margin: 0 0 1.5em;
 	line-height: 1.7em;
@@ -428,6 +449,7 @@ h4.line a:before{
 /*-- //首页 --*/	
 
 /*-- 二级页通用 --*/
+
 .header1 {
 	background: url("../images/banner.jpg")no-repeat 0px 0px;
 	background-position:center center; 
@@ -450,20 +472,9 @@ h4.line a:before{
 .logo1 a{
 	display:block;
 }
-.introduction h3{
-	font-size:2.5em;
-	color:#0170A7;
-	margin:0 0 1em;
-	/*margin:0 0 .5em;*/
-	font-weight:600;
-	text-align:left;
-	font-family: 'Raleway', sans-serif;
-}
-.gallery{
-	padding:4em 0;
-}
+
 .gallery-grid{
-	border:1px solid #f4f4f4;
+	margin: 0 0 1.5em;
 }
 .gallery-grd{
 	padding:1em 0;
@@ -472,23 +483,39 @@ h4.line a:before{
 	width:100%;
 }
 .gallery-grd h4 {
-	text-align:center;
+	text-align: center;
 	margin: 0.5 0 1em;
+	font-weight: 300;
 }
 .gallery-grd h4 a{
 	color: #9c9c9c;
 }
-.introduction {
-	padding: 1em 0 5em;
+.more-big{
+	display: block;
+	text-align: center;
 }
-.introduction p{
-	text-align: left;
+.more-small {
+	display: none;
+	text-align: center;
 }
-.introduction img {
-	margin: 3.5em;
-	width:100%; height: auto;
 
+.contact-grid iframe{
+	width: 100%;
+	height: 22em;
 }
+.contact-textarea h3{
+	margin: 0 0 1em;
+	color:#006fa6;
+}
+.contact-textarea h4 {
+	color: #006fa6;
+	line-height: 1.7em;
+}
+.contact-textarea h4 span{
+	color: #9c9c9c;
+	text-transform: uppercase;
+}
+
 
 /*-- 响应式布局 --*/
 @media screen and (max-width: 1200px) {
@@ -503,6 +530,9 @@ h4.line a:before{
 	}
 }
 @media screen and (max-width: 1024px) {
+	.header1 {
+	background-position:center top; 
+	}	
 	.slogan {
 		width: 80%;
 	}
@@ -512,16 +542,17 @@ h4.line a:before{
 	.slogan p {
 		font-size: 0.9em;
 	}
-	.product-grid {
+	.product-grid, .gallery-grid {
 	  	float: left;
 	  	width: 50%;
 	}
-	.product-grid:nth-child(2) {
+	.product-grid:nth-child(2), .gallery-grid:nth-child(2) {
 	  margin-bottom: 2em;
 	}
-	.product-grid:nth-child(1) {
+	.product-grid:nth-child(1), .gallery-grid:nth-child(1) {
 	  margin-bottom: 2em;
 	}
+
 	.footer-grid {
 	  float: left;
 	  width: 50%;
@@ -545,18 +576,29 @@ h4.line a:before{
 	  text-align: center;
 	  margin-top: 1em;
 	}
+	.contact-grid iframe {
+	  height: 20em;
+	  margin-bottom: 1em;
+	}
 	
 }
 @media screen and (max-width: 990px) {
 	.product-grid p {
 		height: 8.5em;
 	}
+	.gallery-grid{
+		height: 20em;
 	}
-/*针对导航,logo,宣传语*/
+	}
+	
 @media screen and (max-width: 768px) {
 	.header {
 	   min-height: 400px;
 	}
+	.header1 {
+		background-position:center top; 
+		height: 320px;
+	}	
 	span.menu {
 		display: block;
 		cursor: pointer;
@@ -610,11 +652,18 @@ h4.line a:before{
 		margin: 3em auto 0;
 		width: 90%;
 	}
+	.contact-grid iframe {
+	  height: 20em;
+	  margin-bottom: 2em;
+	}
 	
 }
 @media screen and (max-width: 600px) {
 	.product-grid p {
 		height: 12em;
+	}
+	.gallery-grid{
+		height: 16em;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -630,15 +679,18 @@ h4.line a:before{
 	.slogan p {
 		font-size: 0.8em;
 	}
-	.product {
+	.product, .gallery, .contact {
   		padding: 4em 0 6em;
 	}
-	.product-grid {
+	.product-grid, .gallery-grid, .contact-grid {
 	  float: none;
 	  width: 100%;
 	  margin-bottom: 2em;
 	}
 	.product-grid p {
+		height: auto;
+	}
+	.gallery-grid{
 		height: auto;
 	}
 	.footer-grid {
@@ -651,5 +703,13 @@ h4.line a:before{
 	}
 	.footer-bottom {
 	  margin: 0em 0 0;
+	}
+}
+@media screen and (max-width: 420px) {
+	.more-big{
+		display: none;
+	}
+	.more-small{
+		display: block;
 	}
 }

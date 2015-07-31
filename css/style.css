@@ -194,6 +194,14 @@ p.natus{
 	line-height:1.7em;
 	text-align:center;
 }
+p.natus-cn{
+	font-size:14px;
+	color:#000;
+	margin:0 0 2em;
+	line-height:1.7em;
+	text-align:center;
+	text-indent: 2em;
+}
 .introduction {
 	margin: 0 0 3em;
 }
@@ -278,6 +286,7 @@ h4.line a:before{
 	color: #9c9c9c;
 	margin: 0 0 1.5em;
 	line-height: 1.7em;
+	height: 10em;
 }
 /*按钮样式*/
 .btn-primary {
@@ -377,7 +386,7 @@ h4.line a:before{
 	font-size:15px;
 }
 .footer-bottom-left p a{
-	color:#fec514;
+	color:#ffc414;
 }
 .footer-bottom-left p a:hover{
   color: #f4f4f4;
@@ -451,8 +460,8 @@ h4.line a:before{
 /*-- 二级页通用 --*/
 
 .header1 {
-	background: url("../images/banner.jpg")no-repeat 0px 0px;
-	background-position:center center; 
+	background: url("../images/banner1.jpg")no-repeat 0px 0px;
+	background-position:center top; 
 	background-size:cover;
 	padding:0;margin:0;clear:both;
 	height: 300px;
@@ -477,7 +486,7 @@ h4.line a:before{
 	margin: 0 0 1.5em;
 }
 .gallery-grd{
-	padding:1em 0;
+	padding:.5em 0;
 }
 .gallery-grd img {
 	width:100%;
@@ -489,6 +498,10 @@ h4.line a:before{
 }
 .gallery-grd h4 a{
 	color: #9c9c9c;
+	text-transform: capitalize;
+}
+.gallery-grd h4 a:hover {
+	color: #006fa6;
 }
 .more-big{
 	display: block;

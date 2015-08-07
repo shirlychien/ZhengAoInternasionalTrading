@@ -157,6 +157,7 @@ body a{
 .language a.chinese { background: url(../images/cn.jpg) no-repeat 6px center; }
 /*标志和宣传语*/
 .logo {
+	visibility: hidden;
  	text-align: center;
  	padding: 4em 0 0;
 }
@@ -472,6 +473,7 @@ h4.line a:before{
 	-ms-background-size: cover;
 }
 .logo1 {
+	visibility: hidden;
  	text-align: center;
  	padding: 2em 0 0;
 }

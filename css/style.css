@@ -53,15 +53,14 @@ body a{
 .header-left a{
 	display:block;
 }
-.header-left ul li {
-  display: inline-block;
-  margin: 1.2em 1em;
-}
-.header-left li label{
-	float: left;
+.header-left li {
+	display: inline-block;
+	margin: 0 0.5em;
 }
 .header-left ul {
   color: #006fa6;
+  	display: inline-block;
+	margin: 1.2em 1em;
 }
 .header-left ul li a:hover {
   border-top: 4px solid#ffce3a;
@@ -660,7 +659,7 @@ h4.line a:before{
 		margin: 0.05em 0.2em;
 		color:#fff;
 	}
-	.header-left label {
+	.header-left li span {
 	  	display: none;
 	}
 	.logo {

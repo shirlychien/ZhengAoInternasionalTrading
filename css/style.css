@@ -57,6 +57,9 @@ body a{
   display: inline-block;
   margin: 1.2em 1em;
 }
+.header-left li label{
+	float: left;
+}
 .header-left ul {
   color: #006fa6;
 }

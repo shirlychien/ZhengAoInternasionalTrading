@@ -58,7 +58,8 @@ body a{
 	margin: 0 0.5em;
 }
 .header-left ul {
-  color: #006fa6;
+	float:left;
+  	color: #006fa6;
   	display: inline-block;
 	margin: 1.2em 1em;
 }

@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
     font-size: 100%;
 	background:	#fff;
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Lato', Arial, sans-serif !important;
 }
 h1,h2,h3,h4,h5,h6,p,ul,li{
 	margin:0;
@@ -29,7 +29,7 @@ body a{
 /*-- 首页 --*/
 /*背景*/
 .header {
-  background: url("../images/banner.jpg")no-repeat 0px 0px;
+  background: url("../images/banner.jpg")no-repeat;
   background-position:top center; 
   background-size:cover;
   padding:0;margin:0;clear:both;
@@ -81,6 +81,7 @@ body a{
 	float:right;
 	padding-top: 0.3em;
 }
+
 .language,
 .language ul,
 .language li,
@@ -239,6 +240,9 @@ p.natus-cn{
 	padding:5px 50px;
 	background:#0f3b99;
 	border-radius:5px;
+}
+.product-grid {
+	float: left;
 }
 .product-grid h4 a{
 	color:#006fa6;
@@ -598,6 +602,10 @@ h4.line a:before{
 	
 }
 @media screen and (max-width: 990px) {
+	.header-left ul li {
+  display: inline-block;
+  margin: 1.2em 0.5em;
+}
 	.product-grid p {
 		height: 8.5em;
 	}

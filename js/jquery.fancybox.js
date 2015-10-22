@@ -478,7 +478,7 @@
 					direction = current.direction.next;
 				}
 
-				F.jumpto(current.index + 1, direction, 'next');
+				F.jumpto(current.index + 2, direction, 'next');
 			}
 		},
 
@@ -491,7 +491,7 @@
 					direction = current.direction.prev;
 				}
 
-				F.jumpto(current.index - 1, direction, 'prev');
+				F.jumpto(current.index - 2, direction, 'prev');
 			}
 		},
 
@@ -834,7 +834,7 @@
 			/*
 			 * Add reference to the group, so it`s possible to access from callbacks, example:
 			 * afterLoad : function() {
-			 *     this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+			 *     this.title = 'Image ' + (this.index + 2) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
 			 * }
 			 */
 
